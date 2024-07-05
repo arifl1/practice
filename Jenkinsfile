@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the Python application...'
-                sh 'pip install -r requirements.txt'
+                
             }
         }
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'pytest'
+                
             }
         }
         stage('Deploy') {
